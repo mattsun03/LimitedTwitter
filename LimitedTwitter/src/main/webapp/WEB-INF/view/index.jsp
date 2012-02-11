@@ -14,17 +14,17 @@
 		<tr>
 			<td>1</td>
 			<td>Hello world</td>
-			<td><html:link action="/helloWorld">run HelloWorld</html:link></td>
+			<td><html:link action="/helloWorld">run</html:link></td>
 		</tr>
 		<tr>
 			<td>2</td>
-			<td>Hello world</td>
-			<td><html:link action="/jsonSample">run JSON Sample</html:link></td>
+			<td>JSON Data</td>
+			<td><html:link action="/jsonSample">run</html:link></td>
 		</tr>
 		<tr>
 			<td>3</td>
-			<td>Hello world</td>
-			<td><html:link action="/getSystemDate">get system date</html:link></td>
+			<td>システム日付取得</td>
+			<td><html:link action="/getSystemDate">run</html:link></td>
 		</tr>
 	</table>
 </body>
