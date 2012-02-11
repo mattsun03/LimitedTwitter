@@ -22,14 +22,14 @@
 	version="2.4">
 	<display-name>Simple Struts</display-name>
 
-<!-- 	<filter> -->
-<!-- 		<filter-name>CharacterEncodingFilter</filter-name> -->
-<!-- 		<filter-class>net.masa.simple.struts.filter.CharacterEncodingFilter</filter-class> -->
-<!-- 	</filter> -->
-<!-- 	<filter-mapping> -->
-<!-- 		<filter-name>CharacterEncodingFilter</filter-name> -->
-<!-- 		<url-pattern>/*</url-pattern> -->
-<!-- 	</filter-mapping> -->
+	<!-- 	<filter> -->
+	<!-- 		<filter-name>CharacterEncodingFilter</filter-name> -->
+	<!-- 		<filter-class>net.masa.simple.struts.filter.CharacterEncodingFilter</filter-class> -->
+	<!-- 	</filter> -->
+	<!-- 	<filter-mapping> -->
+	<!-- 		<filter-name>CharacterEncodingFilter</filter-name> -->
+	<!-- 		<url-pattern>/*</url-pattern> -->
+	<!-- 	</filter-mapping> -->
 
 	<servlet>
 		<servlet-name>action</servlet-name>
@@ -45,6 +45,31 @@
 		<servlet-name>action</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
+
+	<taglib>
+		　　 <taglib-uri>/tags/struts-bean</taglib-uri>
+		　　 <taglib-location>/WEB-INF/tld/struts-bean.tld</taglib-location>
+	</taglib>
+
+	<taglib>
+		　　<taglib-uri>/tags/struts-html</taglib-uri>
+		　　<taglib-location>/WEB-INF/tld/struts-html.tld</taglib-location>
+	</taglib>
+
+	<taglib>
+		　　<taglib-uri>/tags/struts-logic</taglib-uri>
+		　　<taglib-location>/WEB-INF/tld/struts-logic.tld</taglib-location>
+	</taglib>
+
+	<taglib>
+		　　<taglib-uri>/tags/struts-nested</taglib-uri>
+		　　<taglib-location>/WEB-INF/tld/struts-nested.tld</taglib-location>
+	</taglib>
+
+	<taglib>
+		　　<taglib-uri>/tags/struts-tiles</taglib-uri>
+		　　<taglib-location>/WEB-INF/tld/struts-tiles.tld</taglib-location>
+	</taglib>
 
 	<welcome-file-list>
 		<welcome-file>/WEB-INF/view/index.jsp</welcome-file>
