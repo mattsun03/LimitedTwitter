@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<!-- ======================================== Form Bean Definitions -->
+
+
+	<form-beans>
+		<form-bean name="helloWorldForm" type="jp.co.rough_and_ready.form.HelloWorldForm" />
+	</form-beans>
+
+	<!-- ================================= Global Exception Definitions -->
+
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- =================================== Global Forward Definitions -->
+
+	<global-forwards>
+	</global-forwards>
+
+	<!-- =================================== Action Mapping Definitions -->
+
+	<action-mappings>
+		<action path="/helloWorld" type="jp.co.rough_and_ready.action.HelloWorldAction"
+			name="helloWorldForm">
+			<forward name="success" path="/WEB-INF/view/HelloWorld.jsp" />
+		</action>
+		<action path="/jsonSample" type="jp.co.rough_and_ready.action.JsonSampleAction"
+			name="helloWorldForm">
+		</action>
+		<action path="/getSystemDate" type="jp.co.rough_and_ready.action.SystemDateAction"
+			name="helloWorldForm">
+		</action>
+	</action-mappings>
+
+	<!-- ===================================== Controller Configuration <controller
+		maxFileSize="1024K" bufferSize="1024" processorClass="org.seasar.struts.action.S2RequestProcessor"
+		multipartClass="org.seasar.struts.upload.S2MultipartRequestHandler"/> -->
+
+
+	<!-- ================================ Message Resources Definitions <message-resources
+		parameter="application" factory="org.seasar.struts.util.S2PropertyMessageResourcesFactory"/> -->
+
+
+	<!-- ======================================= Plug Ins Configuration <plug-in
+		className="org.seasar.struts.validator.S2ValidatorPlugIn"> <set-property
+		property="pathnames" value="/WEB-INF/validator-rules.xml"/> </plug-in> -->
+</struts-config>
+
